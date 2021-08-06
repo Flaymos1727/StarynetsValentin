@@ -1,0 +1,224 @@
+@media (max-width: 3000px){
+	.share{
+	margin-left: 250px;
+	margin-right: 250px;
+	}
+}
+@media (max-width: 2000px){
+/*	.bg_review_carousel{
+		width: 500px;
+	}*/
+	.nav-menu ul.menu li.item-menu a.link-menu{
+		white-space: nowrap;
+	}
+	.share{
+	margin-left: 120px;
+	margin-right: 120px;
+	}
+}
+@media (max-width: 1199px){
+	.wrapp_baner h1{
+		font-size: 50px;
+	}
+	.galery .fancybox{
+		width: 33.33333%;
+	}
+	.download{
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		margin: 0 auto;
+	}
+	.btn_download{
+		display: block;
+		margin: 0 auto;
+		width: 205px;
+		padding-left: 14%;
+	}
+}
+
+@media (max-width: 991px){
+	.team-box{
+		margin: 0 auto;
+		max-width: 400px;
+		margin-bottom: 40px;
+	}
+	.img-team-box{
+		display:block;
+		margin: 0 auto;
+	}
+	.social-team{
+		justify-content: center;
+	}
+	.logo{
+		display: block;
+		margin-bottom: 20px;
+	}
+	.logo img{
+		display: block;
+		margin: 0 auto;
+	}
+	.baner{
+		top: -157px;
+		padding-top: 180px;
+		padding-bottom: 100px;
+	}
+	.wrapp_baner h1{
+		font-size: 46px;
+		line-height: 52px;
+	}
+	.text_baner{
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+	.nav-menu ul.menu{
+		justify-content: center;
+	}
+	.galery .fancybox{
+		width: 50%;
+	}
+	.bg_review_carousel{
+		display: none;
+	}
+	.review_carousel_owl{
+		width: 100%;
+	}
+	.owl_carousel_text{
+		font-size: 30px;
+		display: block;
+		margin: 0 auto;
+	}
+	.owl_carousel_text_name{
+		font-size: 14px;
+		display: flex;
+		justify-content: center;
+	}
+	.btn_download{
+		padding-left: 9%;
+	}
+}
+@media (max-width: 767px){
+	.nav-menu ul.menu li a{
+		padding-left: 25px;
+		font-size: 12px;
+	}
+	.wrapp_baner h1{
+		font-size: 30px;
+		line-height: 35px;
+		margin-bottom: 20px;
+	}
+	.text_baner{
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+	.box-servise{
+		margin-bottom: 50px;
+		max-width: 400px;
+		margin: 0 auto;
+	}
+	.footer-collection-share-social{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.img-box-servise{
+		margin-top: 20px;
+	}
+	.btn_download{
+		padding-left: 5%;
+	}
+	.owl_carousel_text_name {
+		display: flex;
+		justify-content: center;
+}
+	.share {
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+}
+@media (max-width: 700px){
+	.btn_download {
+		padding-left: 6%;
+}
+}
+@media (max-width: 600px){
+	.btn_download{
+		padding-left: 7%;
+	}
+	.location {
+		padding-right: 5px;
+	}
+	.share {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+}
+@media (max-width: 500px){
+	.separator{
+		padding-bottom: 11px;
+	}
+	.galery .fancybox{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.wrapp_baner h1{
+		line-height: 100%;
+	}
+	.footer-collection{
+	 	padding: 0px 5px 100px 5px;
+	}
+/*	.footer-collection-about-name{
+		padding-left: 20px;
+	}*/
+	.btn_download{
+		padding-left: 8%;
+	}
+	.share{
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	.owl_carousel_text_name {
+		font-size: 14px;
+	}
+}
+@media (max-width: 470px){
+	.nav-menu ul.menu li a{
+		padding-left: 9px;
+		font-size: 12px;
+	}
+	.wrapp_baner h1{
+		font-size: 26px;
+		line-height: 32px;
+	}
+	.img-box-servise img {
+		display: block;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+}
+@media (max-width: 400px){
+	.logo{
+		width: 300px;
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+	.nav-menu ul.menu li.item-menu a.link-menu{
+		font-size: 11px;
+		font-weight: bold;
+	}
+	.wrapp_baner h1{
+		font-size: 16px;
+	}
+	.btn_download {
+		width: 220px;
+	}
+
+}
+
+
+
+
+
+

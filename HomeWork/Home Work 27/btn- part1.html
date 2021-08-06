@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work 27 - part1</title>
+    <style>
+        p {
+            display: none;
+        }
+        #myBtn{
+            width: 170px;
+            height: 35px;
+            background-color: #1CE3EF;
+            outline: none;
+            color: #d90f0f;
+        }
+    </style>
+</head>
+    <body>
+            <button id="myBtn">Press it</button>
+            <p id="demo">You Opened Paragraph!</p>
+        
+    </body>
+    <script type="text/javascript">
+        document.getElementById("myBtn").addEventListener("click", function() {
+    if (document.getElementById("demo").style.display == "block") {
+        document.getElementById("demo").style.display = "none";
+        document.getElementById("myBtn").innerHTML = 'Press it';
+    } else {
+        document.getElementById("demo").style.display = "block";
+        document.getElementById("myBtn").innerHTML = 'Close it';
+    }
+});
+
+    </script>
+
+</html>

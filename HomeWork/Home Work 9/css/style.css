@@ -1,0 +1,65 @@
+.main{
+	padding: 100px 0;
+}
+
+.hover_link{
+	width: 200px;
+	background-color: #6803FF;
+	text-align: center;
+	padding: 20px;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 30px;
+}
+
+.hover_link:hover{
+	background-color: #39F3AB;
+}
+
+.link:link{
+	text-decoration: none;
+	font-size: 16px;
+	display: block;
+}
+a:focus,
+a:visited{
+	color: aqua;
+}
+
+input:focus{
+	border: red solid 1px;
+}
+
+.nav ul.menu{
+	background: #6A86FF;
+}
+.nav ul.menu li.item a{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
+	display: block;
+}
+
+.nav ul.menu li.active a:active,
+.nav ul.menu li.active a,
+.nav ul.menu li.item a:hover{
+	color: aquamarine;
+}
+
+.nav ul.sub-menu li.item{
+	background-color: #1EFF00;
+}
+
+.nav ul.sub-menu-1 li.item{
+	background-color: #FFC000;
+}
+
+.nav ul.sub-menu li.item:hover{
+	background-color: #FC00FF;
+}
+
+.nav ul.sub-menu-1 li.item:hover{
+	background-color: #FF0000;
+}
+

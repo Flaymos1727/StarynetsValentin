@@ -1,0 +1,48 @@
+				/*border header'a + footer'a*/
+header, footer{
+	background-color: #b3e0ff;
+	padding: 20px;
+}
+header{
+	text-align: right;
+}
+				/*border div'a*/
+.block {
+	border: 1px solid skyblue;
+	margin: 25px;
+	padding: 20px;
+}
+				/*Кнопка Subscribe for news*/
+button.block{
+	background-color: white;
+	color: blue;
+}
+				/*Отступы между блоков + bg*/
+.section {
+	background-color: #ffdab3;
+	margin: 15px; 
+}
+				/*Кнопки внутри div'a*/
+.section button{
+	background-color: red;
+	color: white;
+	padding: 5px;
+}
+				/*Кнопки header'a + footer'a*/
+header button, footer button{
+	background-color: blue;
+	color: white;
+	padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

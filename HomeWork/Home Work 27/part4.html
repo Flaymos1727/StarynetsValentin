@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>part4</title>
+</head>
+<body>
+	<script>
+		let human = {
+			firstName : "Maya",
+			lastName : "Dos",
+			language: " ",
+			name: ' ',
+			'name Dog': "Profi",
+			set setName(nameCat){
+				this.name = nameCat;
+			},
+			set setLanguage(lang){
+				this.language  = lang;
+			},
+			get getName(){
+				return this.name;
+			},
+			get getLanguage(){
+				return this.language;
+			}
+		}
+		human.setName = 'Barsik';
+		human.setLanguage = 'UA';
+		delete human['name Dog'];
+		for(let item in human){
+			document.write(item + "-" + human[item] + '<br>')
+		}
+		
+	</script>
+</body>
+
+</html>

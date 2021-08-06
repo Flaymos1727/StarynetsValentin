@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+    font-family: 'marck_scriptregular';
+    src: url('marckscript-regular-webfont.woff2') format('woff2'),
+         url('marckscript-regular-webfont.woff') format('woff'),
+         url('marckscript-regular-webfont.svg#marck_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2, p{
+	font-family: 'marck_scriptregular';
+	font-size: 30px;
+	color: white;
+}
+
+body{
+	background-image: url("../img/cube.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+ 
+.main-text{
+	text-align: left;
+	width: 50%;
+	padding-top: 200px;
+}
+
+.main-text h2{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.main-text p{
+	text-transform: lowercase;
+	text-indent: 20px;
+}
+
+.main-form{
+	text-align: center;
+	width: 50%;
+	padding-left: 950px;
+}
+
+._input{
+	width: 100%;
+}
+

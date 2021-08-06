@@ -1,0 +1,95 @@
+							/*1 Animation*/
+.goblin{
+	width: calc(825px/7); /*было - 886px*/
+	height: 174px;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	-webkit-animation: goblin 1s steps(7) infinite;
+	-moz-animation: goblin 1s steps(7) infinite;
+	-o-animation: goblin 1s steps(7) infinite;
+	animation: goblin 1s steps(7) infinite;
+}
+
+@keyframes goblin{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: -886px;
+	}
+}
+
+							/*2 Animation*/
+.guy{
+	width: calc(551px/6);
+	height: 91px;
+	background-image: url(../img/sprite2.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	-webkit-animation: guy 1s steps(6) infinite;
+	-moz-animation: guy 1s steps(6) infinite;
+	-o-animation: guy 1s steps(6) infinite;
+	animation: guy 1s steps(6) infinite;
+}
+
+@keyframes guy{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: -551px;
+	}
+}
+
+							/*3 Animation*/
+.girl{
+	width: calc(1535px/6);
+	height: 255px;
+	background-image: url(../img/sprite3.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	-webkit-animation: girl 0.5s steps(6) infinite;
+	-moz-animation: girl 0.5s steps(6) infinite;
+	-o-animation: girl 0.5s steps(6) infinite;
+	animation: girl 0.5s steps(6) infinite;
+}
+
+@keyframes girl{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: -1535px;
+	}
+}
+
+							/*4 Animation*/
+.ghost{
+	width: calc(1024px/8);
+	height: 157px;
+	background-image: url(../img/sprite4.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	-webkit-animation: ghost 0.5s steps(8) infinite;
+	-moz-animation: ghost 0.5s steps(8) infinite;
+	-o-animation: ghost 0.5s steps(8) infinite;
+	animation: ghost 0.5s steps(8) infinite;
+}
+
+@keyframes ghost{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: -1024px;
+	}
+}

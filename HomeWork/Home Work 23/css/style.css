@@ -1,0 +1,19 @@
+.btn{
+	width: 200px;
+	height: 40px;
+	background-color: #6613FF;
+	color: #fff;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding-top: 20px;
+	text-align: center;
+}
+.btn-text{
+	visibility: hidden;
+}
+.btn-text:after{
+	content: 'NEW';
+	visibility: visible;
+	color: #19FF0E;
+	padding-right: 30px;
+}
