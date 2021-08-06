@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work 28</title>
+</head>
+<body>
+    <script>
+        let Human = function(name, lastName, age, eyeColor, language){
+            this.name = name;
+            this.lastName = lastName;
+            this.age = age;
+            this.eyeColor = eyeColor;
+            this.language = language;
+            this.transfer = function(){
+                return 'Привет, меня зовут ' + this.name + ' ' + this.lastName + ',' + ' мне ' + this.age + ',' + ' у меня ' + this.eyeColor + ' глаза' + ',' + ' и я говорю на ' + this.language + '!' + '<br>' + '<br>';
+            }
+            
+        };
+        let person1 = new Human('Игорь', 'Соколов', 25, 'зеленые', 'итальянском');
+        let person2 = new Human('Андрей', 'Петров', 34, 'голубые', 'английском');
+        document.write(person1.transfer());
+        document.write(person2.transfer());
+    </script>
+</body>
+</html>
