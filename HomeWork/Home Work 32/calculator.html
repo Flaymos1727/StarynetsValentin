@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>calculator</title>
+</head>
+	<style>
+		.main-calculator{
+			width: 500px;
+			margin: 0 auto;
+			text-align: center;
+			background-color: rgb(4, 222, 238); 
+			padding: 20px;
+			border: solid 2px #000;
+		}
+		.operation-block button{
+			width: 40px;
+			height: 40px;
+			margin: 20px;
+			border: none;
+			outline: none;
+			transform: all 0.3s;
+			background-color: rgba(37, 15, 231, 0.384);
+			color: #fff;
+			font-size: 18px;
+			cursor: pointer;
+			
+		}
+		.operation-block button:hover{
+			background-color: rgb(10 173 98 / 38%);
+			
+		}
+		.input-block{
+			display: inline-block;
+			padding: 10px;
+		}
+		.input-block input{
+			outline: none;
+			padding: 10px;
+		}
+		.input-block label{
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		.form-inputs-result{
+			width: 541px;
+			/*height: 40px;*/
+			background-color: rgb(6 230 168);
+			margin: 0 auto;
+			text-align: center;
+			border: 1px solid #000;
+			margin-top: 1px;
+			
+		}
+		label{
+			font-weight: bold;
+		}
+		.form-inputs-result input{
+			padding: 3px;
+		}
+		.inputs-result{
+			width: 170px;
+    		height: 25px;
+		}
+		.form-inputs-result textarea{
+			text-align: center;
+		   padding-top: 10px;
+			font-size: 14px;
+		}
+	</style>
+<body>
+	<div class="main-calculator">
+		<div class="operation-block">
+			<button id="buttonPlus">+</button>
+			<button id="buttonMinus">-</button>
+			<button id="buttonMultiply">*</button>
+			<button id="buttonDevide">/</button>
+			<button id="buttonPercent">%</button>
+		</div>
+		<hr>
+		<div class="form-inputs">
+			<form action="">
+				<div class="input-block">
+					<label>Number 1</label>
+					<input type="number" id="number1" value="10">
+				</div>
+				<div class="input-block">
+					<label>Number 2</label>
+					<input type="number" id="number2" value="5">
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="form-inputs-result">
+			<div class="input-block">
+				<label>RESULT</label>
+				<textarea class="inputs-result" cols="20" rows="2" style="resize: none;"></textarea>
+			</div>
+		</div>
+	</div>
+</body>
+	<script>
+		let buttonPlus = document.getElementById('buttonPlus');
+		let buttonMinus = document.getElementById('buttonMinus');
+		let buttonMultiply = document.getElementById('buttonMultiply');
+		let buttonDevide = document.getElementById('buttonDevide');
+		let buttonPercent = document.getElementById('buttonPercent');
+
+		let input1 = document.getElementById('number1');
+		let input2 = document.getElementById('number2');
+
+		function getNumber1(){
+			return +input1.value;
+		}
+		function getNumber2() {
+			return +input2.value;
+		}
+		
+		function operationCalc(childOperation){
+			let result;
+			if(childOperation === '+'){
+				result = getNumber1() + getNumber2();
+			}else if(childOperation === '-'){
+				result = getNumber1() - getNumber2();
+			}else if(childOperation === '*'){
+				result = getNumber1() * getNumber2();
+			}else if(childOperation === '/'){
+				result = getNumber1() / getNumber2();
+			}else if(childOperation === '%'){
+				result = getNumber1() % getNumber2();
+			}else{
+				alert('ERROR 404');
+			}
+			//alert(result);
+			document.querySelector('.inputs-result').innerHTML = result;
+
+		}
+		function buttonPlusClick(){
+			operationCalc('+');
+		}
+
+		function buttonMinusClick(){
+			operationCalc('-');
+		}
+
+		function buttonMultiplyClick(){
+			operationCalc('*');
+		}
+
+		function buttonDevideClick(){
+			operationCalc('/');
+		}
+
+		function buttonPercentClick(){
+			operationCalc('%');
+		}
+		buttonPlus.addEventListener('click', buttonPlusClick);
+		buttonMinus.addEventListener('click', buttonMinusClick);
+		buttonMultiply.addEventListener('click', buttonMultiplyClick);
+		buttonDevide.addEventListener('click', buttonDevideClick);
+		buttonPercent.addEventListener('click', buttonPercentClick);
+
+	</script>
+</html>
