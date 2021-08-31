@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Work 33</title>
+</head>
+	<style>
+		body{
+			text-align: center;
+		}
+		img {
+			width: 200px;
+			height: auto;
+			transition: all .3s ease;
+		}
+		
+			/* part2 */
+		.for-css {
+			display: inline-block;
+		}
+		.for-css img{
+			height: 300px;
+		}
+		.for-css:hover img{
+			background-image: url("img/img2.jpg");	
+			opacity: 0;	
+		}
+		.for-css:hover{
+			background-image: url("img/img4.jpg");
+		}
+	</style>
+	
+	<body>
+		
+		<h2>JS</h2>
+			<img src="img/img1.jpg" alt="img1" title="img1" id="pic">
+
+
+		<h2>CSS</h2>
+			<div class="for-css">
+				<img src="img/img3.jpg" alt="im3">
+			</div>
+
+	</body>
+
+		<script>
+				// 1 part
+			pic.onmouseover = function () {
+				this.src = 'img/img2.jpg';
+				this.alt = this.title = 'img2';
+			}
+			pic.onmouseout = function () {
+				this.src = 'img/img3.jpg';
+				this.alt = this.title = 'img3';
+			}
+		</script>
+</html>
