@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Work 35</title>
+</head>
+<style>
+	body {
+		text-align: center;
+		font-size: 26px;
+	}
+</style>
+
+<body>
+
+</body>
+<script>
+
+		// Convert to JSON
+	let human = {
+		firstName: "Jack",
+		lastName: "Smith",
+		age: 25,
+		job: true,
+		birthday: {
+			year: 1996,
+			month: 1,
+			day: 10
+		}
+	};
+	console.log(JSON.stringify(human));
+		// {"firstName":"Jack","lastName":"Smith","age":25,"job":true,"birthday":{"year":1996,"month":1,"day":10}}
+
+		// Convert to Object
+	let jsonStr = '{"firstName":"Jack","lastName":"Smith","age":25,"job":true,"birthday":{"year":1996,"month":1,"day":10}}';
+	jsonStr = JSON.parse(jsonStr);
+	
+	document.write('firstName: ' + jsonStr.firstName + '<br>' + 'lastName: ' + jsonStr.lastName + '<br>' + 'age: ' + jsonStr.age + '<br>' + 'job: ' + jsonStr.job + '<br>' + 'birthday: ' + jsonStr.birthday.year + '.' + jsonStr.birthday.month + '.' + jsonStr.birthday.day);
+
+</script>
+
+</html>
