@@ -1,0 +1,214 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,
+body{
+	height: 100%;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+img{
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.header-img img{
+	width: 200px;
+	height: auto;
+	margin: 10px;
+}
+.nav-menu{
+	margin: 10px;
+}
+.nav-menu ul.main-menu{
+	display: flex;
+}
+.nav-menu ul.main-menu li{
+	list-style: none;
+	padding: 10px;
+	transition: all 0.3s;
+}
+.nav-menu ul.main-menu a{
+	text-decoration: none;
+}
+.nav-menu ul.main-menu a li:hover{
+	color: #009efa;
+}
+.header-tel{
+	position: relative;
+}
+.header-tel:before{
+	content: "";
+	position: absolute;
+	left: -27px;
+    top: 13px;
+	background-image: url(/img/fa-phone.png);
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 22px;
+}
+.header-tel{
+	margin: 10px;
+}
+.header-tel a{
+	text-decoration: none;
+	color: #000;
+}
+.header-tel a:hover{
+	color: #009efa;
+}
+
+.header-btn{
+	margin: 10px;
+}
+.header-btn button{
+	padding: 15px 45px;
+	background-color: #0a98aa;
+	outline: none;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.header-btn button:hover{
+	background-color: #1eb8fe;
+}
+
+.baner{
+	background-image: url(../img/Group-4.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+    padding: 310px 0; 
+	background-position: left left;
+	position: relative;
+}
+
+.fixed-overlay {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -125px;
+    margin-top: -200px;
+}
+.modal_container {
+    background-color: #fff;
+    width: 300px;
+    height: auto;
+}
+.modal-container form{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.form-title{
+	position: relative;
+	padding: 15px 10px;
+}
+.form-title a span{
+	position: absolute;
+	top: 18px;
+    right: 20px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #000;
+	transition: all 0.3s;
+}
+.form-title a span:hover{
+	color: #10d1eb;
+}
+.form-title h2{
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.form-body {
+	padding: 10px;
+	margin-top: 20px;
+}
+.form-body input{
+	width: 100%;
+    padding: 5px;
+    margin: 5px 0px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-message{
+	padding: 0px 10px;
+	font-size: 14px;
+}
+.form-message label button{
+	border: none;
+	background-color: #fff;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+.form-message label button:hover{
+	color: #0a98aa;
+}
+.form-message textarea{
+	margin: 10px 0px;
+	width: 100%;
+	font-size: 16px;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	resize: none;
+	outline: none;
+	display: none;
+}
+
+.form-submit{
+	padding: 0px 10px;
+}
+.submitBtn{
+	width: 100%;
+	height: 39px;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 20px 0px;
+	background-color: #0a98aa;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+.submitBtn:hover{
+	background-color: #1eb8fe;
+}
+
+.btnMessage{
+	outline: none;
+	border: none;
+}
+
+
